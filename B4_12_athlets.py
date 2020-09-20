@@ -209,6 +209,7 @@ def main():
             # Вызовем функцию поиска атлета по дате рождения
             athelete_close_birthdate = find_by_date(user.birthdate)
             # Выведем результат
+            print(f'Найден пользователь {user.id}: {user.first_name} {user.last_name}. Рост - {user.height}, дата рождения - {user.birthdate}.')
             print("Ближайший по росту атлет: {} {}".format(athelete_close_height.name, athelete_close_height.height))
             print("Ближайший по дате рождения атлет: {} {}".format(athelete_close_birthdate.name, athelete_close_birthdate.birthdate))
         else:
